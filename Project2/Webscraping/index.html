@@ -1,0 +1,93 @@
+<html lang="en">
+​
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Job Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+  <link href="css/style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Sonsie One' rel='stylesheet'>
+  
+</head>
+​
+<body>
+   <!-- Building the navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://estherbaili.github.io/Project2/index.html">Job Posting Visualisation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                      <!-- Home button -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://estherbaili.github.io/Project2/index.html">Home 
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!-- Tab that contains the map -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://estherbaili.github.io/Project2/map.html">Map</a>
+                    </li>
+                    <!-- Data tab -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://estherbaili.github.io/Project2/data.html">Data</a>
+                    </li>
+                    <!-- Job Dashboard Tab -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://estherbaili.github.io/Project2/Webscraping/index.html">More Job Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Job Dashboard </h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <select id="selDataset" onchange="optionChanged"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Breakdown of Job Locations in Each State</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+​
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Job Posting Visualisation</title>
+   
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link href="css/style.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Sonsie One' rel='stylesheet'>
+   
+   </head>
+   
+   <body>
+   <!-- Building the navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://estherbaili.github.io/Project2/index.html">Job Posting Visualisation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                      <!-- Home button -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://estherbaili.github.io/Project2/index.html">Home 
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!-- Tab that contains the map -->
+                      <!-- Put Leaflet here -->
+     <div class="text-center">
+        <iframe src="https://estherbaili.github.io/Project2/rawmap.html" width="1100px" height="683px" scrolling="no"></iframe>
+            <head>
+                <title>Leafley Map</title>    
+            </head>
+        <body>
+                <!-- Leaflet JS -->
+            <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+            integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+            crossorigin=""></script>
+            <!-- d3 JS -->
+            <script src="https://d3js.org/d3.v5.min.js"></script>
+
+            <!-- Marker Cluster JS -->
+            <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+        
+        </body>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://estherbaili.github.io/Project2/map.html">Map</a>
+                    </li>
+                    <!-- Data tab -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://estherbaili.github.io/Project2/data.html">Data</a>
+                    </li>
+                    <!-- Job Dashboard Tab -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://estherbaili.github.io/Project2/Webscraping/index.html">More Job Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header and details on how to work the plugin -->
+    <h1 class="map-header"> Current data analyst job openings in Australia</h1>
+  
+     <!-- Put Leaflet here -->
+     <div class="text-center">
+        <iframe src="https://estherbaili.github.io/Project2/maplink.html" width="1100px" height="683px" scrolling="no"></iframe>
+            <head>
+                <title>Leaflet Map</title>    
+            </head>
+        <body> 
+                <!-- Leaflet JS -->
+            <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+            integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+            crossorigin=""></script>
+            <!-- d3 JS -->
+            <script src="https://d3js.org/d3.v5.min.js"></script>
+
+            <!-- Marker Cluster JS -->
+            <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+        
+        </body>
+
+    <footer class="py-3 bg-light">
+        <div class="container">
+           <p class="text-center" >Contributors: Ash Drayton | Baili Li | Benedict
+               Nathaniel | Dhanya Maheswaran | Vineet Goyal
+           </p>
+        </div>
+     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    </body>
+</html>
